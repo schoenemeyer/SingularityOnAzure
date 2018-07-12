@@ -1,8 +1,7 @@
-# Singularity-in-Azure
-This project describes how to nstall Singularity in Azure and run the Intel MPI pingpong benchmark within the Singularity container.
+# Singularity running on H16r with CentOS HPC 7.4
+This project describes how to install Singularity and run the Intel MPI pingpong benchmark within the Singularity container.
 
-Create a VM in the Aure Portal, e.g. H16r
-Select CentOS HPC 7.4 
+Create a VM of type H16r in the Azure Portal or with Azure CLI with CentOS HPC 7.4 
 
 Connect to the machine and update the VM.
 sudo yum -y update
