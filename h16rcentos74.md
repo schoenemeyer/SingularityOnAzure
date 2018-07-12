@@ -8,7 +8,7 @@ Connect to the machine and update the VM.
 sudo yum -y update
 ```
 
-# Install Singularity
+# Install Singularity 
 
 Install required libraries
 ```
