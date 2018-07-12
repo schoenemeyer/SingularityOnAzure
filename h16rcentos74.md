@@ -29,13 +29,13 @@ Full details can be found on the Singularity site .https://singularity.lbl.gov/i
 
 # Build an HPC container from a definition file
 The container requires Intel MPI to be installed.  The installation is taken from the host system:
+
+```
 cd /opt
 tar zcvf ~/intel.tgz intel
-```
 -rw-rw-r--.  1 thomas thomas 67891717 Jul  9 19:34 intel.tgz
-```
 cd
-
+```
 Create a file named centos.def with the following content:
 
 ```
