@@ -7,18 +7,22 @@ Connect to the machine and update the VM.
 sudo yum -y update
 
 # Install Singularity
+
+Install required libraries
+```
 sudo yum -y install git
 git clone https://github.com/singularityware/singularity.git
 cd singularity
 sudo yum -y install automake autoconf libtool
 sudo yum -y install libarchive-devel
 sudo yum -y install squashfs-tools
-
-
+```
+Configure and make
+```
 ./configure --prefix=/usr/local
 make
 sudo make install
-
+```
 Full details can be found on the Singularity site .https://singularity.lbl.gov/install-linux
 
 # Build an HPC container from a definition file
