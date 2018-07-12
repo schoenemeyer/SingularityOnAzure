@@ -4,7 +4,9 @@ This project describes how to install Singularity and run the Intel MPI pingpong
 Create a VM of type H16r in the Azure Portal or with Azure CLI with CentOS HPC 7.4 
 
 Connect to the machine and update the VM.
+```
 sudo yum -y update
+```
 
 # Install Singularity
 
