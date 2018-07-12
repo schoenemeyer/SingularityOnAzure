@@ -72,3 +72,9 @@ Comments on the MPI options:
 - We should typically use “I_MPI_FABRICS=shm:dapl” but this will make sure dapl is used for our test.
 - I_MPI_DAPL_TRANSLATION_CACHE=0 works around an Intel MPI bug (random but infrequent crashes with certain applications) 
 
+## Testing Singularity on H16r with CentOS 7.4
+
+https://github.com/schoenemeyer/SingularityOnAzure/blob/master/h16rcentos74.md
+
+
+
