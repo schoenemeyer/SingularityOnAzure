@@ -18,7 +18,7 @@ Since the CentOS repository does not contain a Singularity package, it must be b
     make
     sudo make install
 
-Full details can be found on the Singularity site https://singularity.lbl.gov/install-linux.
+
 
 ## Build an HPC container from a definition file
 
