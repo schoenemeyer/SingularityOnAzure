@@ -6,7 +6,6 @@ In addition to docker and shifter there is a third approach for providing contai
 Singularity is a container model suited to HPC and it was created by Gergory M. Kurtzer.  This has been tested on an H16r VM running the CentOS 7.1 HPC image in the Azure marketplace.
 I recommend to read the Singularity documentation in https://www.sylabs.io/docs/ that contains complete user guide. 
 
-
 ## Install Singularity
 
 Since the CentOS repository does not contain a Singularity package, it must be built from source.
@@ -17,8 +16,6 @@ cd singularity
 ./autogen.sh
 ./configure --prefix=/shared/bin/singularity
 make
-
-
 Packages for Ubuntu Xenial
 sudo apt-get install libnss3-dev curl automake squashfs-tools libtool libarchive-dev
 
