@@ -9,7 +9,7 @@ I recommend to read the Singularity documentation in https://www.sylabs.io/docs/
 
 ## Install Singularity
 
-There is no singularity package available in the CentOS repository and so it must be built from source.
+Since the CentOS repository does not contain a Singularity package, it must be built from source.
 
     git clone https://github.com/singularityware/singularity.git
     cd singularity
