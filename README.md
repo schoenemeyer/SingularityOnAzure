@@ -14,7 +14,7 @@ Follow the quick installation steps described in https://www.sylabs.io/guides/3.
 Verify that the installation is completed
 
 
-    singularity --version
+    thomas@thschonm:~/go/src/github.com/sylabs/singularity$singularity --version
     singularity version 3.0.0-274.g224e2e9
 
 
