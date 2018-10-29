@@ -9,21 +9,7 @@ I recommend to read the Singularity documentation in https://www.sylabs.io/docs/
 ## Install Singularity
 
 Since the CentOS repository does not contain a Singularity package, it must be built from source.
-
-
-    sudo yum -y install git nss curl libcurl libtool automake libarchive-devel squashfs-tools
-    git clone https://github.com/singularityware/singularity.git
-    cd singularity
-    ./autogen.sh
-    ./configure --prefix=/shared/bin/singularity
-    make
-    sudo make install
-    
-    For Ubuntu Xenial
-    sudo apt-get install libnss3-dev curl automake squashfs-tools libtool libarchive-dev
-
-
-
+Follow the steps described in https://www.sylabs.io/guides/3.0/user-guide/quick_start.html#quick-installation-steps
 ## Build an HPC container from a definition file
 
 The container requires Intel MPI to be installed.  The installation is taken from the host system:
