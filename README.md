@@ -9,7 +9,8 @@ I recommend to read the Singularity documentation in https://www.sylabs.io/docs/
 ## Install Singularity
 
 Since the CentOS repository does not contain a Singularity package, it must be built from source.
-Follow the steps described in https://www.sylabs.io/guides/3.0/user-guide/quick_start.html#quick-installation-steps
+
+Follow the quick installation steps described in https://www.sylabs.io/guides/3.0/user-guide/quick_start.html#quick-installation-steps
 ## Build an HPC container from a definition file
 
 The container requires Intel MPI to be installed.  The installation is taken from the host system:
