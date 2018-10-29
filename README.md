@@ -2,7 +2,10 @@
 
 ## Introduction
 
-Singularity is a container model better suited to HPC.  This has been tested on an H16r VM running the CentOS 7.1 HPC image in the Azure marketplace.
+In addition to docker and shifter there is a third approach for providing container solutions for HPC.
+Singularity is a container model  suited to HPC.  This has been tested on an H16r VM running the CentOS 7.1 HPC image in the Azure marketplace.
+I recommend to read the Singularity documentation in https://www.sylabs.io/docs/ that contains complete user guide. 
+
 
 ## Install Singularity
 
