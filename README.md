@@ -18,9 +18,11 @@ Since the CentOS repository does not contain a Singularity package, it must be b
     ./configure --prefix=/shared/bin/singularity
     make
     sudo make install
+    
+    For Ubuntu Xenial
+    sudo apt-get install libnss3-dev curl automake squashfs-tools libtool libarchive-dev
 
-Packages for Ubuntu Xenial
-sudo apt-get install libnss3-dev curl automake squashfs-tools libtool libarchive-dev
+
 
 ## Build an HPC container from a definition file
 
