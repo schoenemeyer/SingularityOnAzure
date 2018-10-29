@@ -42,22 +42,31 @@ This is the centos definition file used:
 
     %files
     intel.tgz /opt/intel.tgz
-    /etc/rdma/dat.conf /opt/dat.conf
+
+    %environment
+    export I_MPI_FALLBACK=0
+    export I_MPI_FABRICS=shm:dapl
+    export I_MPI_DAPL_PROVIDER=ofa-v2-ib0
+    export I_MPI_DYNAMIC_CONNECTION=0
+    export I_MPI_DAPL_TRANSLATION_CACHE=0
 
     %post
     yum install -y tar gzip libmlx4 librdmacm libibverbs dapl rdma net-tools numactl
     cd /opt
     tar zxf intel.tgz
-    cp /opt/dat.conf /etc/rdma/dat.conf
-    rm /opt/dat.conf
+    rm -rf intel.tgz
+    mkdir -p /etc/rdma
+    touch /etc/rdma/dat.conf
 
-The rdma config file is also used from the host VM in this definition file.  The HPC image has an updated version of “dat.conf” to the version in the “rdma” package.
+The HPC image has an updated and node-specific version of “dat.conf” to the version in the “rdma” package. To make sure the correct version is used, the dat.conf will be used from the host node using a bindpath.
 
 The image required root user to build:
 
+    export PATH=/shared/bin/singularity/bin:$PATH
     sudo singularity build centos7.simg centos.def
 
 This creates the “centos7.simg” Singularity image.
+
 
 ## Testing MPI on the image
 
