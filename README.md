@@ -17,12 +17,7 @@ cd singularity
 ./autogen.sh
 ./configure --prefix=/shared/bin/singularity
 make
-sudo make installgit clone https://github.com/singularityware/singularity.git
-    cd singularity
-    ./autogen.sh
-    ./configure --prefix=/usr/local
-    make
-    sudo make install
+
 
 Packages for Ubuntu Xenial
 sudo apt-get install libnss3-dev curl automake squashfs-tools libtool libarchive-dev
